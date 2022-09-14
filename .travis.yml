@@ -6,7 +6,7 @@
 #       script:
 #         - clang -coverage -O0 hello_world.c -o hello_world
 #         - ./hello_world
-    os: linux
+  - os: linux
     dist: focal
     language: python
     arch: arm64
@@ -29,6 +29,7 @@
       - python hello_world.py
 
   - os: linux
+    language: ruby
     dist: focal
     arch: amd64
     script:
