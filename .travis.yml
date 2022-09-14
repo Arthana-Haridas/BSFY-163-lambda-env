@@ -9,6 +9,9 @@
     os: linux
     dist: focal
     language: ruby
+    rvm:
+      - 2.5
+      - 2.6
     arch: arm64
     deploy:
       provider:  lambda-test
