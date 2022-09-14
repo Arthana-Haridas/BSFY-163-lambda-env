@@ -6,9 +6,9 @@
 #       script:
 #         - clang -coverage -O0 hello_world.c -o hello_world
 #         - ./hello_world
-  - os: linux
-    dist: focal
-    language: python
+    os: linux
+ -  dist: focal
+    language: ruby
     arch: arm64
     deploy:
       provider:  lambda-test
@@ -26,11 +26,6 @@
         - source: travis-ci/dpl
         - branch: master
     script:
-      - python hello_world.py
+      - ruby hello_world.rb
 
-  - os: linux
-    language: ruby
-    dist: focal
-    arch: amd64
-    script:
-        - ruby hello_world.rb
+  
