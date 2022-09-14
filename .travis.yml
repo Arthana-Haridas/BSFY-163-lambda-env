@@ -14,7 +14,7 @@
       - 2.6
     arch: arm64
     deploy:
-      provider:  lambda-test
+      provider:  lambda
       access_key_id: AKIAU65TDUORKKK4T447
       secret_access_key: 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
       region: us-east-1
