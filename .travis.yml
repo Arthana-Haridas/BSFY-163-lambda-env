@@ -1,7 +1,8 @@
-   os: linux
+
    jobs:
      include:
        - dist: focal
+         os: linux
          language: ruby
          rvm:
            - 2.5
