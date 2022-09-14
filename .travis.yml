@@ -1,5 +1,5 @@
-  jobs:
-  include:
+   jobs:
+   include:
 #     - os: windows
 #       language: c
 #       arch: amd64
@@ -27,3 +27,9 @@
         - branch: master
     script:
       - python hello_world.py
+
+  - os: linux
+    dist: focal
+    arch: amd64
+    script:
+        - ruby hello_world.rb
