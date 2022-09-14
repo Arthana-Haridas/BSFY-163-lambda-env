@@ -14,7 +14,7 @@
       provider:  lambda-test
       access_key_id: AKIAU65TDUORKKK4T447
       secret_access_key: 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
-      region: "$AWS_DEFAULT_REGION"
+      region: us-east-1
       function_name: test_bsfy_func_142
       runtime: nodejs16.x
       timeout: '120'
